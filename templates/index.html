@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix Movie Recommendation</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<div class="overlay">
+
+    <div class="container">
+
+        <h1>🎬 NETFLIX</h1>
+
+        <p>Find movies similar to your favorite one.</p>
+
+        <form method="POST">
+
+            <input
+                type="text"
+                name="movie"
+                list="movies"
+                placeholder="🔍 Search a movie..."
+                required>
+
+            <datalist id="movies">
+                {% for movie in movies %}
+                <option value="{{ movie }}">
+                {% endfor %}
+            </datalist>
+
+            <button type="submit">
+                🍿 Recommend Movies
+            </button>
+
+        </form>
+
+        {% if recommendations %}
+
+        <div class="results">
+
+            <h2>Recommended For You</h2>
+
+            <div class="cards">
+
+                {% for movie in recommendations %}
+
+                <div class="card">
+
+                    <div class="poster">
+                        🎬
+                    </div>
+
+                    <div class="info">
+
+                        <h3>{{ movie.title }}</h3>
+
+                        <p class="rating">⭐ IMDb {{ movie.rating }}</p>
+
+                        <details>
+
+                            <summary>📖 More Info</summary>
+
+                            <div class="description">
+
+                                <p>{{ movie.overview }}</p>
+
+                            </div>
+
+                        </details>
+
+                    </div>
+
+                </div>
+
+                {% endfor %}
+
+            </div>
+
+        </div>
+
+        {% endif %}
+
+
+
+    </div>
+
+</div>
+
+</body>
+
+</html>
