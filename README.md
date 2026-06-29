@@ -2,17 +2,17 @@
 
 A simple Netflix-inspired Movie Recommendation System built using **Flask** and **Machine Learning**. This web application recommends similar movies based on the selected movie using **CountVectorizer** and **Cosine Similarity**.
 
-## 📌 Features
+##  Features
 
-- 🔍 Search for a movie
-- 🎬 Get Top 5 similar movie recommendations
-- ⭐ Display IMDb ratings
-- 📖 View a short description of each recommended movie
-- 🎨 Netflix-inspired user interface
-- 💻 Responsive and easy-to-use web application
+-  Search for a movie
+-  Get Top 5 similar movie recommendations
+-  Display IMDb ratings
+-  View a short description of each recommended movie
+-  Netflix-inspired user interface
+-  Responsive and easy-to-use web application
 
 
-## 🛠️ Technologies Used
+##  Technologies Used
 
 - Python
 - Flask
@@ -45,7 +45,7 @@ Movie-Recommendation-System
 
 ---
 
-## ⚙️ Installation
+##  Installation
 
 ### 1. Clone the repository
 
@@ -79,7 +79,7 @@ http://127.0.0.1:5000
 
 ---
 
-## 🧠 How It Works
+##  How It Works
 
 1. The movie dataset is loaded using **Pandas**.
 2. Movie genres and overviews are combined into a single text feature.
@@ -89,7 +89,7 @@ http://127.0.0.1:5000
 
 ---
 
-## 📸 Application Preview
+##  Application Preview
 
 ### Home Page
 - Search movies
@@ -102,17 +102,6 @@ http://127.0.0.1:5000
 
 ---
 
-## 🚀 Future Enhancements
-
-- 🎥 Display movie posters
-- 🌟 User login and favorites
-- ❤️ Watchlist feature
-- 🎭 Filter by genre
-- 🔥 Trending and popular movies
-- 🎬 Trailer integration
-- 🌙 Improved animations and UI
-
----
 
 ## 👩‍💻 Author
 
