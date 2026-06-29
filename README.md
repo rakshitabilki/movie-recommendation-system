@@ -102,6 +102,8 @@ http://127.0.0.1:5000
 
 ---
 
+<img width="1547" height="917" alt="image" src="https://github.com/user-attachments/assets/c76f4b43-7ee1-4653-b25c-2296db3cb1f3" />
+
 
 ## 👩‍💻 Author
 
